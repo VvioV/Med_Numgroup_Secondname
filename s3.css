@@ -1,0 +1,15 @@
+body{
+    background-color: #e3e2df;
+    color: #5d001e;
+    margin: 5px;
+    padding: 2px;
+}
+header,
+footer{
+    text-align: center;
+    background: #edc7b7;;
+}
+p,
+footer{
+    text-align: right;
+}
