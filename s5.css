@@ -3,16 +3,21 @@ body{
     color: #5d001e;
     margin: 5px;
     padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header,
 footer{
     text-align: center;
-    background: #edc7b7;;
+    background-color: #edc7b7;;
 }
 p {
-    text-align: right;
+    text-align: justify;
+    text-indent: 3ch;
 }
 h2,h3,h4 {
     color: black;
     text-decoration-line: underline;
+}
+address{
+    color: rgba(106, 104, 219, 0.966);
 }
