@@ -39,6 +39,22 @@ address{
     border-bottom: 1px dotted black;
 }
 
+.myimage-div
+{
+    display: none;
+    color: black;
+}
+a.myimage-ssilka:hover+div
+{
+    display: block;
+}
+
+
+
+
+
+
+
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
