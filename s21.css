@@ -63,21 +63,26 @@ aside {
     height: 800%;
 }
 
+
+
 @keyframes gradient {
- 0% {
-   background-position: 0% 50%;
- }
- 50% {
-   background-position: 100% 50%;
- }
- 100% {
+  0% {
     background-position: 0% 50%;
   }
-}
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+   }
+ }
+ 
+ li, p {
+    color: #0d5854;
+ }
+ 
 
-li, p {
-   color: #0d5854;
-}
+
 
 
 #ugolkrug{
@@ -127,12 +132,36 @@ li, p {
     width:100%; /* Длина фигуры */
     height:100%; /* Высота фигуры */
     background: #A2DB74; /* фон блока */
+    
     -moz-border-radius: 50px; /* закругление для старых Mozilla Firefox */
     -webkit-border-radius: 50px; /* закругление для старых Chrome и Safari */
     -khtml-border-radius: 50px; /* закругление для браузера Konquerer системы Linux */
     border-radius: 50px; /* закругление углов для всех, кто понимает */
     padding: 10px; /* внутренние отступы */
    }
+
+
+
+
+   .parent {
+    border: 4px solid #0d5854;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+.child {
+    border: 4px solid #5FE3A9;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    color: rgba(256, 256, 256, 0.8);
+}
+
+
+
+
+
+
 
 
    .textcols {
