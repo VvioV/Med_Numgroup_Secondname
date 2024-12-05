@@ -1,0 +1,294 @@
+body{
+    background-color: #def2f1;
+    color: #0d5854;
+    margin: 5px;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p, ul {
+    text-align: justify;
+    text-indent: 3ch;
+}
+
+h2,h3, h4 {
+    color: #17252a ;
+    text-decoration-line: underline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(186, 18, 18);
+}
+
+address {
+    color: black;
+}
+
+
+
+.myimage-div {
+    display: none;
+    color: black;
+}
+a.myimage-ssilka:hover+div {
+    display: block;
+}
+
+aside {
+    background: #fff;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33%;
+    height: 700px;
+}
+
+
+
+
+.container {
+    padding: 60px 0;
+    text-align: center;
+    color: #17252a;
+    border-radius: 10px;
+}
+
+
+.gradient-background {
+    background: linear-gradient(-45deg, #29D2BB, #5FE3A9, #37A065, #A2DB74);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 800%;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+    background-position: 0% 50%;
+  }
+}
+
+li, p {
+   color: #0d5854;
+}
+
+
+#ugolkrug{
+    width:100%; /* Длина фигуры */
+    height:100%; /* Высота фигуры */
+    background: #29D2BB; /* фон блока */
+    -moz-border-radius: 50px; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 50px; /* закругление для старых Chrome и Safari */
+    -khtml-border-radius: 50px; /* закругление для браузера Konquerer системы Linux */
+    border-radius: 50px; /* закругление углов для всех, кто понимает */
+    padding: 10px; /* внутренние отступы */
+   }
+
+
+
+
+
+   #ugolkrug1{
+    width:100%; /* Длина фигуры */
+    height:100%; /* Высота фигуры */
+    background: #5FE3A9; /* фон блока */
+    -moz-border-radius: 50px; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 50px; /* закругление для старых Chrome и Safari */
+    -khtml-border-radius: 50px; /* закругление для браузера Konquerer системы Linux */
+    border-radius: 50px; /* закругление углов для всех, кто понимает */
+    padding: 10px; /* внутренние отступы */
+   }
+
+
+
+
+   #ugolkrug2{
+    width:100%; /* Длина фигуры */
+    height:100%; /* Высота фигуры */
+    background: #37A065; /* фон блока */
+    -moz-border-radius: 50px; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 50px; /* закругление для старых Chrome и Safari */
+    -khtml-border-radius: 50px; /* закругление для браузера Konquerer системы Linux */
+    border-radius: 50px; /* закругление углов для всех, кто понимает */
+    padding: 10px; /* внутренние отступы */
+   }
+
+
+
+
+   #ugolkrug3{
+    width:100%; /* Длина фигуры */
+    height:100%; /* Высота фигуры */
+    background: #A2DB74; /* фон блока */
+    -moz-border-radius: 50px; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 50px; /* закругление для старых Chrome и Safari */
+    -khtml-border-radius: 50px; /* закругление для браузера Konquerer системы Linux */
+    border-radius: 50px; /* закругление углов для всех, кто понимает */
+    padding: 10px; /* внутренние отступы */
+   }
+
+
+   .textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	
+}
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
+
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #023112;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+     text-align: left;
+  color: #5FE3A9;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #012902;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;   
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #def2f1;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-200%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+h5 {
+
+    text-align: center;
+    color: #232323;
+
+}
+h6 {
+    color: #17252a ;
+    text-decoration-line: underline;
+    text-align: center;
+
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

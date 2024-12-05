@@ -1,0 +1,72 @@
+body{
+    background-color: #def2f1;
+    color: #0d5854;
+    margin: 5px;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header,
+
+p, ul {
+    text-align: justify;
+    text-indent: 3ch;
+}
+
+h2,h3,h4,h1 {
+    color: #17252a ;
+    text-decoration-line: underline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(186, 18, 18);
+}
+
+address {
+    color: black;
+  
+}
+
+
+
+.myimage-div
+{
+    display: none;
+    color: black;
+}
+a.myimage-ssilka:hover+div
+{
+    display: block;
+}
+
+aside{
+    background: #fff;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33%;
+    height: 700px;
+}
+
+
+
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
